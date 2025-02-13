@@ -36,7 +36,7 @@ docker pull docker.cmliussss.net/library/nginx:stable-alpine3.19-perl
 sudo mkdir -p /etc/docker
 sudo tee /etc/docker/daemon.json <<-'EOF'
 {
-  "registry-mirrors": ["https://docker.cmliussss.net"]  # 请替换为您自己的Worker自定义域名
+  "registry-mirrors": ["https://cf-workers-docker-io-2uc.pages.dev/"]  # 请替换为您自己的Worker自定义域名
 }
 EOF
 sudo systemctl daemon-reload
